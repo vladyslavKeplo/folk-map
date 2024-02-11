@@ -6588,33 +6588,33 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
             </g>
           </g>
         </g>
-		<g>
-	<text transform="matrix(1 0 0 1 718.2507 322.9)" className="st17 st18">Kyiv</text>
-	<text transform="matrix(1 0 0 1 581.5 317.5784)" className="st17 st18">Zhytomir</text>
-	<text transform="matrix(1 0 0 1 541.8569 443.712)" className="st17 st18">Vinnytsia</text>
-	<text transform="matrix(1 0 0 1 409.1902 384.0446)" className="st17 st18">Khmelnytskyi</text>
-	<text transform="matrix(1 0 0 1 358.5236 275.8)" className="st17 st18">Riwne</text>
-	<text transform="matrix(1 0 0 1 279.9587 260.6999)" className="st17 st18">Lutsk</text>
-	<text transform="matrix(1 0 0 1 188.3903 372.3787)" className="st17 st18">Lviv</text>
-	<text transform="matrix(1 0 0 1 304.1697 436.5)" className="st17 st18">Ternopil</text>
-	<text transform="matrix(1 0 0 1 194.5 469.4451)" className="st17 st18">Iwano-Frankivsk</text>
-	<text transform="matrix(1 0 0 1 727.0001 773.9786)" className="st17 st18">Odessa</text>
-	<text transform="matrix(1 0 0 1 807.1001 706.2454)" className="st17 st18">Mykolav</text>
-	<text transform="matrix(1 0 0 1 882.2571 754.7001)" className="st17 st18">Kherson</text>
-	<text transform="matrix(1 0 0 1 1073.4011 621.0684)" className="st17 st18">Zaporizhzhia</text>
-	<text transform="matrix(1 0 0 1 844.3904 528.6788)" className="st17 st18">Kropyvnytskyi</text>
-	<text transform="matrix(1 0 0 1 990.5237 979.8453)" className="st17 st18">Simferopol</text>
-	<text transform="matrix(1 0 0 1 1288.657 605.4453)" className="st17 st18">Donetsk</text>
-	<text transform="matrix(1 0 0 1 1397.9905 520.6456)" className="st17 st18">Luhansk</text>
-	<text transform="matrix(1 0 0 1 1070 532.912)" className="st17 st18">Dnipro</text>
-	<text transform="matrix(1 0 0 1 1034.1238 415.1005)" className="st17 st18">Poltava</text>
-	<text transform="matrix(1 0 0 1 1159.1511 383.9)" className="st17 st18">Kharkiv</text>
-	<text transform="matrix(1 0 0 1 822 420.556)" className="st17 st18">Cherkasy</text>
-	<text transform="matrix(1 0 0 1 779.8997 211.3999)" className="st17 st18">Chernihiv</text>
-	<text transform="matrix(1 0 0 1 1046.5234 247.5787)" className="st17 st18">Sumy</text>
-	<text transform="matrix(1 0 0 1 61.6907 508.5999)" className="st17 st18">Uzhhorod</text>
-	<text transform="matrix(1 0 0 1 299.2 562.2294)" className="st17 st18">Chernivtsi</text>
-</g>
+		<g id="title-label-list">
+			<text transform="matrix(1 0 0 1 715.6187 326.7607)" className="st17 st18">Kyiv</text>
+			<text transform="matrix(1 0 0 1 574.4885 323.3058)" className="st17 st18">Zhytomir</text>
+			<text transform="matrix(1 0 0 1 533.2682 449.4395)" className="st17 st18">Vinnytsia</text>
+			<text transform="matrix(1 0 0 1 385.8896 389.772)" className="st17 st18">Khmelnytskyi</text>
+			<text transform="matrix(1 0 0 1 362.0491 281.5274)" className="st17 st18">Riwne</text>
+			<text transform="matrix(1 0 0 1 285.3593 266.4273)" className="st17 st18">Lutsk</text>
+			<text transform="matrix(1 0 0 1 198.41 378.1061)" className="st17 st18">Lviv</text>
+			<text transform="matrix(1 0 0 1 302.8076 442.2274)" className="st17 st18">Ternopil</text>
+			<text transform="matrix(1 0 0 1 178.7778 476.7724)" className="st17 st18">Iwano-Frankivsk</text>
+			<text transform="matrix(1 0 0 1 728.9583 779.7061)" className="st17 st18">Odessa</text>
+			<text transform="matrix(1 0 0 1 801.0505 711.9728)" className="st17 st18">Mykolav</text>
+			<text transform="matrix(1 0 0 1 877.9945 760.4275)" className="st17 st18">Kherson</text>
+			<text transform="matrix(1 0 0 1 1052.5956 626.7958)" className="st17 st18">Zaporizhzhia</text>
+			<text transform="matrix(1 0 0 1 817.1347 534.4062)" className="st17 st18">Kropyvnytskyi</text>
+			<text transform="matrix(1 0 0 1 979.8403 985.5728)" className="st17 st18">Simferopol</text>
+			<text transform="matrix(1 0 0 1 1286.9092 611.1727)" className="st17 st18">Donetsk</text>
+			<text transform="matrix(1 0 0 1 1394.4603 526.373)" className="st17 st18">Luhansk</text>
+			<text transform="matrix(1 0 0 1 1071.2698 538.6394)" className="st17 st18">Dnipro</text>
+			<text transform="matrix(1 0 0 1 1034.7147 420.8279)" className="st17 st18">Poltava</text>
+			<text transform="matrix(1 0 0 1 1154.9667 389.6274)" className="st17 st18">Kharkiv</text>
+			<text transform="matrix(1 0 0 1 816.1017 426.2834)" className="st17 st18">Cherkasy</text>
+			<text transform="matrix(1 0 0 1 772.3901 217.1273)" className="st17 st18">Chernihiv</text>
+			<text transform="matrix(1 0 0 1 1051.9924 253.3061)" className="st17 st18">Sumy</text>
+			<text transform="matrix(1 0 0 1 58.6772 514.3273)" className="st17 st18">Uzhhorod</text>
+			<text transform="matrix(1 0 0 1 289.7128 567.9568)" className="st17 st18">Chernivtsi</text>
+		</g>
       </svg>
     </div>
   );

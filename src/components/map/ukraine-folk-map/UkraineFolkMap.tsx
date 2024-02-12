@@ -3117,9 +3117,9 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
           />
         </g>
         <g id="regions-group">
-          <g id="zaporizhia-group-obl">
+          <g id="zaporizhzhia-group-obl">
             <path
-              id="zaporizhia"
+              id="zaporizhzhia"
               className="st13"
               d="M1263.1,638c-0.1,0.4,0,0.7,0,1.1c0,0.3,0.1,0.6,0,0.8c-1.1,1.1-1.7,3.5-1.4,5.1
 		c0,0.2,0.1,0.4,0.2,0.6c0.1,0.3,0.2,0.5,0.2,0.8c-0.3,0.3-0.8,0.7-1.4,1c-0.8-2.2-2.1-3.3-3.7-3.3c-0.1,0-0.1,0-0.2,0
@@ -3243,7 +3243,7 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
               style={{ overflow: "visible" }}
               width="1024"
               height="1138"
-              href="images/coat-of-armsFE00FCE5.png"
+              href="images/coat-of-arms/zaporizhzhia-coat-of-arms-img.png"
               transform="matrix(4.600666e-02 0 0 4.600666e-02 1071.0839 531.9225)"
             ></image>
             <g id="point">
@@ -3412,7 +3412,7 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
               style={{ overflow: "visible" }}
               width="1024"
               height="990"
-              href="images/coat-of-armsFE00FCE7.png"
+              href="images/coat-of-arms/dnipropetrovsk-coat-of-arms-img.png"
               transform="matrix(4.771538e-02 0 0 4.771538e-02 1060.5134 449.9319)"
             ></image>
             <g id="point_00000082366898218515026780000004706501855026316471_">
@@ -3554,7 +3554,7 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
               style={{ overflow: "visible" }}
               width="1024"
               height="1108"
-              href="images/coat-of-armsFE00FCE2.png"
+              href="images/coat-of-arms/donetsk-coat-of-arms-img.png"
               transform="matrix(4.771538e-02 0 0 4.771538e-02 1279.0763 508.1023)"
             ></image>
             <g id="point_00000139292997526809208670000017677109006921880960_">
@@ -3677,7 +3677,7 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
               style={{ overflow: "visible" }}
               width="1024"
               height="1024"
-              href="images/coat-of-armsFE00FCE3.png"
+              href="images/coat-of-arms/luhansk-coat-of-arms-img.png"
               transform="matrix(4.771538e-02 0 0 4.771538e-02 1388.5066 427.0703)"
             ></image>
             <g id="point_00000166666788903623310490000014937634750169031826_">
@@ -3821,7 +3821,7 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
               style={{ overflow: "visible" }}
               width="800"
               height="970"
-              href="images/coat-of-armsFE00FCED.png"
+              href="images/coat-of-arms/kharkiv-coat-of-arms-img.png"
               transform="matrix(4.771538e-02 0 0 4.771538e-02 1158.9761 296.9722)"
             ></image>
             <g id="point_00000085935906050922071010000007080170457244800644_">
@@ -3968,7 +3968,7 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
               style={{ overflow: "visible" }}
               width="800"
               height="1002"
-              href="images/coat-of-armsFE00FCEF.png"
+              href="images/coat-of-arms/sumy-coat-of-arms-img.png"
               transform="matrix(4.771538e-02 0 0 4.771538e-02 1042.0831 156.6916)"
             ></image>
             <g id="point_00000004534664888770527560000006553505938784205991_">
@@ -4121,7 +4121,7 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
               style={{ overflow: "visible" }}
               width="800"
               height="964"
-              href="images/coat-of-armsFE00FCE0.png"
+              href="images/coat-of-arms/chernihiv-coat-of-arms-img.png"
               transform="matrix(4.771538e-02 0 0 4.771538e-02 766.8148 122.7994)"
             ></image>
             <g id="point_00000114783503367480496070000014711406329666668184_">
@@ -4275,7 +4275,7 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
               style={{ overflow: "visible" }}
               width="800"
               height="995"
-              href="images/coat-of-armsFE00FCE1.png"
+              href="images/coat-of-arms/kiev-coat-of-arms-img.png"
               transform="matrix(4.771538e-02 0 0 4.771538e-02 711.3137 218.8881)"
             ></image>
             <g id="point_00000000928485396817914500000003264512890999633324_">
@@ -4409,7 +4409,7 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
               style={{ overflow: "visible" }}
               width="800"
               height="1017"
-              href="images/coat-of-armsFE00FCE6.png"
+              href="images/coat-of-arms/poltava-coat-of-arms-img.png"
               transform="matrix(4.771538e-02 0 0 4.771538e-02 1041.7826 329.4366)"
             ></image>
             <g id="point_00000142858700479853973310000003735271426122342815_">
@@ -4555,7 +4555,7 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
               style={{ overflow: "visible" }}
               width="800"
               height="1031"
-              href="images/coat-of-armsB6248D2E.png"
+              href="images/coat-of-arms/cherkasy-coat-of-arms-img.png"
               transform="matrix(4.771538e-02 0 0 4.771538e-02 822.512 332.8338)"
             ></image>
             <g id="point_00000003067410352184259390000000235352978601772423_">
@@ -4728,7 +4728,7 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
               style={{ overflow: "visible" }}
               width="800"
               height="1090"
-              href="images/coat-of-armsB6248D29.png"
+              href="images/coat-of-arms/kirovohrad-coat-of-arms-img.png"
               transform="matrix(4.771538e-02 0 0 4.771538e-02 841.5981 439.9451)"
             ></image>
             <g id="point_00000024688367432139325720000015866813058903045258_">
@@ -4899,7 +4899,7 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
               style={{ overflow: "visible" }}
               width="800"
               height="1109"
-              href="images/coat-of-armsB6248D2A.png"
+              href="images/coat-of-arms/mykolaiv-coat-of-arms-img.png"
               transform="matrix(4.771538e-02 0 0 4.771538e-02 813.1124 624.9899)"
             ></image>
             <g id="point_00000002348947421979105980000002205526058772883876_">
@@ -5061,7 +5061,7 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
               style={{ overflow: "visible" }}
               width="1024"
               height="1138"
-              href="images/coat-of-armsB6248D28.png"
+              href="images/coat-of-arms/kherson-coat-of-arms-img.png"
               transform="matrix(4.771538e-02 0 0 4.771538e-02 868.3697 660.1502)"
             ></image>
             <g id="point_00000070111544917144584350000013981529155793877934_">
@@ -5293,7 +5293,7 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
               style={{ overflow: "visible" }}
               width="1024"
               height="1006"
-              href="images/coat-of-armsB6248D26.png"
+              href="images/coat-of-arms/odessa-coat-of-arms-img.png"
               transform="matrix(4.771538e-02 0 0 4.771538e-02 720.9124 693.899)"
             ></image>
             <g id="point_00000029043011618185060230000010635329817301097867_">
@@ -5427,7 +5427,7 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
               style={{ overflow: "visible" }}
               width="800"
               height="911"
-              href="images/coat-of-armsB6248D39.png"
+              href="images/coat-of-arms/crimea-coat-of-arms-img.png"
               transform="matrix(6.134697e-02 0 0 6.134697e-02 980.8112 889.7559)"
             ></image>
             <g id="point_00000075159993054190948500000004423586731719361454_">
@@ -5561,7 +5561,7 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
               style={{ overflow: "visible" }}
               width="800"
               height="963"
-              href="images/coat-of-armsB6248D3A.png"
+              href="images/coat-of-arms/vinnytsia-coat-of-arms.png"
               transform="matrix(4.096491e-02 0 0 4.096491e-02 541.0111 362.5259)"
             ></image>
             <g id="point_00000083068368845141311940000014127975829532159389_">
@@ -5701,7 +5701,7 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
               style={{ overflow: "visible" }}
               width="800"
               height="986"
-              href="images/coat-of-armsB6248D38.png"
+              href="images/coat-of-arms/zhytomyr-coat-of-arms-img.png"
               transform="matrix(4.771538e-02 0 0 4.771538e-02 583.3668 232.5712)"
             ></image>
             <g id="point_00000062177402822622670100000003429563230090484922_">
@@ -5716,9 +5716,9 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
               />
             </g>
           </g>
-          <g id="rivne-group-obl">
+          <g id="riwne-group-obl">
             <path
-              id="rivne"
+              id="riwne"
               className="st13"
               d="M500.3,135.2c0.1,0.8-0.2,1.2-0.7,1.8c-0.3,0.4-0.6,0.7-0.8,1.2l-0.8,2.3c-0.5,1.5-1,3-1.6,4.5
 		c-0.1,0.2-0.1,0.4-0.1,0.6c-0.2,0.1-0.4,0.1-0.7,0.2c-0.2,0-0.4,0-0.6,0c-0.5,0-1,0.1-1.4,0.2c-0.2,0.1-0.3,0.2-0.5,0.2
@@ -5831,7 +5831,7 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
               style={{ overflow: "visible" }}
               width="800"
               height="1111"
-              href="images/coat-of-armsB6248D3E.png"
+              href="images/coat-of-arms/riw	ne-coat-of-arms-img.png"
               transform="matrix(4.771538e-02 0 0 4.771538e-02 360.4705 185.6435)"
             ></image>
             <g id="point_00000070104544755161958370000014219420794523757965_">
@@ -5956,7 +5956,7 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
               style={{ overflow: "visible" }}
               width="801"
               height="961"
-              href="images/coat-of-arms../../../../../Downloads/B62815CB.png"
+              href="images/coat-of-arms/volyn-coat-of-arms-img.png"
               transform="matrix(4.167579e-02 0 0 4.167579e-02 283.23 187.8172)"
             ></image>
             <g id="point_00000178167521302959609440000006121432683923678624_">
@@ -6066,7 +6066,7 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
               style={{ overflow: "visible" }}
               width="800"
               height="1013"
-              href="images/coat-of-armsB6248D5D.png"
+              href="images/coat-of-arms/lviv-coat-of-arms-img.png"
               transform="matrix(4.771538e-02 0 0 4.771538e-02 190.9138 290.5741)"
             ></image>
             <g id="point_00000075144947884865471260000011832224643732218240_">
@@ -6186,7 +6186,7 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
               style={{ overflow: "visible" }}
               width="800"
               height="976"
-              href="images/coat-of-armsB6248D5F.png"
+              href="images/coat-of-arms/ternopil-coat-of-arms-img.png"
               transform="matrix(4.593263e-02 0 0 4.593263e-02 303.5711 357.1646)"
             ></image>
             <g id="point_00000002345889715932361310000004675664868557597064_">
@@ -6515,7 +6515,7 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
               style={{ overflow: "visible" }}
               width="800"
               height="974"
-              href="images/coat-of-armsB6248D55.png"
+              href="images/coat-of-arms/zakarpattia-coat-of-arms-img.png"
               transform="matrix(4.771538e-02 0 0 4.771538e-02 57.3109 423.2987)"
             ></image>
             <g id="point_00000038384416931862513320000008209999446964567218_">
@@ -6609,7 +6609,7 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
               style={{ overflow: "visible" }}
               width="1024"
               height="1124"
-              href="images/coat-of-armsB6248D57.png"
+              href="images/coat-of-arms/kirovohrad-coat-of-arms-img.png"
               transform="matrix(4.771538e-02 0 0 4.771538e-02 321.7255 469.4878)"
             ></image>
             <g id="point_00000087395978751393493030000012896711022794154406_">

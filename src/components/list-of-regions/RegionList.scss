@@ -1,6 +1,6 @@
 p.paragraph {
     font-size: 1rem;
-    color: var(--Black, #000);
+    color: var(--black, #000);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 400;
     line-height: 1.5rem;
@@ -16,7 +16,7 @@ p.paragraph {
     font-weight: 500;
     line-height: 2rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: var(--Black, #000);
+    color: var(--black, #000);
 }
 .title-list{
     padding-left: 1rem;
@@ -36,6 +36,7 @@ ul.list li{
     cursor: pointer;
     padding: 0.5rem 0 0.5rem 1rem;
     &:hover p{
-        color: var(--Blue, blue);
+        color: var(--blue, rgb(85, 85, 240));
+        text-decoration: underline;
     }
 }

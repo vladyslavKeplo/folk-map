@@ -12,10 +12,10 @@ interface UkraineFolkMapProps {
 const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
   scale,
   setScale,
-  startXOffset=0,
+  startXOffset = 0,
   selectedRegion,
 }) => {
-  const [width] = useWindowSize()
+  const [width] = useWindowSize();
   const [mouseOffset, setMouseOffset] = useState<{ x: number; y: number }>({x: 0,y: 0,});
   const [prevOffset, setPrevOffset] = useState<{ x: number; y: number }>({x: 0,y: 0,});
   const [mouseOffsetStart, setMouseOffsetStart] = useState<{x: number;y: number;}>({ x: 0, y: 0 });
@@ -40,18 +40,22 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
     const rect = mapWrapper.current?.getBoundingClientRect();
     if (rect && event.buttons === 1) {
       setMouseOffset({
-        x:
-          (event.clientX -
-            rect.x -
-            mouseOffsetStart.x +
-            prevOffset.x * (scale + 1)) /
-          (scale + 1),
-        y:
-          (event.clientY -
-            rect.y -
-            mouseOffsetStart.y +
-            prevOffset.y * (scale + 1)) /
-          (scale + 1),
+        x: parseFloat(
+          Number(
+            (event.clientX -
+				rect.x -
+				mouseOffsetStart.x +
+				prevOffset.x * (scale + 1)) /
+				(scale + 1)).toFixed(3)
+        ),
+        y: parseFloat(
+          Number(
+				(event.clientY -
+				rect.y -
+				mouseOffsetStart.y +
+				prevOffset.y * (scale + 1)) /
+				(scale + 1)).toFixed(3)
+		),
       });
     }
   };
@@ -82,7 +86,7 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
   };
 
   function reset() {
-	setScale(0);
+    setScale(0);
     setMouseOffset({ x: 0, y: 0 });
     setPrevOffset({ x: 0, y: 0 });
     setMouseOffsetStart({ x: 0, y: 0 });
@@ -105,10 +109,10 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
   };
 
   useEffect(() => {
-	if(width <= 1440){
-		reset()
-	}
-  }, [width])
+    if (width <= 1440) {
+      reset();
+    }
+  }, [width]);
 
   return (
     <div
@@ -3235,7 +3239,8 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
 		c0.5,0,1.2-0.8,1.2-0.8c0.1-0.1,0.1-0.1,0.1-0.2v-0.8l0.1-0.1l0,0c0.8,0,1.5,0.2,2.2,0.4c0.5,0.1,1,0.3,1.5,0.3
 		c0.3,0,0.7-0.1,1-0.2c0.3-0.1,0.6-0.2,0.9-0.2l0.1,0.1c-0.1,0.6-0.5,1.2-0.9,1.9C1263.6,636.6,1263.2,637.2,1263.1,638z"
             />
-            <image className="icon-coat-of-arms"
+            <image
+              className="icon-coat-of-arms"
               style={{ overflow: "visible" }}
               width="1024"
               height="1138"
@@ -3403,7 +3408,8 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
 		c0.1,0.4,0.2,0.8,0.2,1.2l0.1,0.5C1240.9,541.6,1241.1,542.9,1240.9,543.9z"
             />
 
-            <image className="icon-coat-of-arms"
+            <image
+              className="icon-coat-of-arms"
               style={{ overflow: "visible" }}
               width="1024"
               height="990"
@@ -3544,7 +3550,8 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
 		c-0.1,0.3-0.2,0.7-0.3,1c-0.3,1.2,0.7,1.8,1.5,2.3C1412.9,574.8,1413.3,575,1413.5,575.4z"
             />
 
-            <image className="icon-coat-of-arms"
+            <image
+              className="icon-coat-of-arms"
               style={{ overflow: "visible" }}
               width="1024"
               height="1108"
@@ -3666,7 +3673,8 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
 		c-0.1,0.2-0.2,0.3-0.2,0.5C1500.8,411.1,1500.5,411.6,1500.5,412.2z"
             />
 
-            <image className="icon-coat-of-arms"
+            <image
+              className="icon-coat-of-arms"
               style={{ overflow: "visible" }}
               width="1024"
               height="1024"
@@ -3809,7 +3817,8 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
 		c0.9,1.8,2.2,4.3,2.9,4.6l1.6,0.8L1335,345.3z"
             />
 
-            <image className="icon-coat-of-arms"
+            <image
+              className="icon-coat-of-arms"
               style={{ overflow: "visible" }}
               width="800"
               height="970"
@@ -3955,7 +3964,8 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
 		c0.5,0.7,1.3,1.1,2,1.6c0.3,0.2,0.5,0.3,0.7,0.4c2.1,1.5,3.9,2.3,5.7,2.5C1141.6,285.3,1141.8,285.3,1142.1,285.3z"
             />
 
-            <image className="icon-coat-of-arms"
+            <image
+              className="icon-coat-of-arms"
               style={{ overflow: "visible" }}
               width="800"
               height="1002"
@@ -4107,7 +4117,8 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
 		c0.1,0.2,0.1,0.3,0.2,0.5c0.1,0.3,0.2,0.7,0.5,1.1c0,0,0,0,0.1,0.1c0.4,0.2,1.4,0.3,3.3,0.3C964.6,74.3,964.7,74.4,964.7,74.4z"
             />
 
-            <image className="icon-coat-of-arms"
+            <image
+              className="icon-coat-of-arms"
               style={{ overflow: "visible" }}
               width="800"
               height="964"
@@ -4260,7 +4271,8 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
 		c0,0,0,0.1-0.1,0.2l-0.1,0.4c0,0.1,0,0.2,0,0.3L854.8,287.1z"
             />
 
-            <image className="icon-coat-of-arms"
+            <image
+              className="icon-coat-of-arms"
               style={{ overflow: "visible" }}
               width="800"
               height="995"
@@ -4393,7 +4405,8 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
 		C1119.4,369.8,1121.2,373.5,1124.8,379z"
             />
 
-            <image className="icon-coat-of-arms"
+            <image
+              className="icon-coat-of-arms"
               style={{ overflow: "visible" }}
               width="800"
               height="1017"
@@ -4538,7 +4551,8 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
 		c0,0.1,2,5.8,2.5,6.1c0,0,0.1,0.1,0.2,0.1L913.9,444.3z"
             />
 
-            <image className="icon-coat-of-arms"
+            <image
+              className="icon-coat-of-arms"
               style={{ overflow: "visible" }}
               width="800"
               height="1031"
@@ -4710,7 +4724,8 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
 		c0.1,0,1.4,1.2,2.2,1.5L999.4,462.8z"
             />
 
-            <image className="icon-coat-of-arms"
+            <image
+              className="icon-coat-of-arms"
               style={{ overflow: "visible" }}
               width="800"
               height="1090"
@@ -4880,7 +4895,8 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
 		c0.1,1.1,0.8,2.2,1.5,3.3C935.6,660.1,936,660.9,936.3,661.6z"
             />
 
-            <image className="icon-coat-of-arms"
+            <image
+              className="icon-coat-of-arms"
               style={{ overflow: "visible" }}
               width="800"
               height="1109"
@@ -5041,7 +5057,8 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
 		C1092.1,773.5,1093.2,773.5,1095.1,773.5z"
             />
 
-            <image className="icon-coat-of-arms"
+            <image
+              className="icon-coat-of-arms"
               style={{ overflow: "visible" }}
               width="1024"
               height="1138"
@@ -5272,7 +5289,8 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
 		c0.1,0.6,0.2,1.4,0.8,1.7c0.5,0.1,1,0.1,1.4,0.1c0.8,0,1.2,0,1.4,0.8C789.4,677,789.5,677.4,789.4,677.7z"
             />
 
-            <image className="icon-coat-of-arms"
+            <image
+              className="icon-coat-of-arms"
               style={{ overflow: "visible" }}
               width="1024"
               height="1006"
@@ -5405,7 +5423,8 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
 		C1218.3,884.2,1218.3,887.6,1218.3,887.9z"
             />
 
-            <image className="icon-coat-of-arms"
+            <image
+              className="icon-coat-of-arms"
               style={{ overflow: "visible" }}
               width="800"
               height="911"
@@ -5538,7 +5557,8 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
 		c0.1,0.1,0.2,0.2,0.3,0.3C689.5,511.9,689.9,512.2,690.1,512.5z"
             />
 
-            <image className="icon-coat-of-arms"
+            <image
+              className="icon-coat-of-arms"
               style={{ overflow: "visible" }}
               width="800"
               height="963"
@@ -5677,7 +5697,8 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
 		C662.8,310.8,663,310.8,663.2,310.9z"
             />
 
-            <image className="icon-coat-of-arms"
+            <image
+              className="icon-coat-of-arms"
               style={{ overflow: "visible" }}
               width="800"
               height="986"
@@ -5806,7 +5827,8 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
 		c0.8,0.2,1.7,0.3,2.7,0.3C498.8,133.9,500.1,134.1,500.3,135.2z"
             />
 
-            <image className="icon-coat-of-arms"
+            <image
+              className="icon-coat-of-arms"
               style={{ overflow: "visible" }}
               width="800"
               height="1111"
@@ -5930,7 +5952,8 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
 		c0.2,0.2,0.4,0.4,0.5,0.5c0.1,0.2,0.2,1,0.2,1.4c0,0.3,0,0.6,0,0.7c0,0.1,0.1,0.3,0.1,0.5C369.8,207.6,369.9,208.3,369.4,208.6z"
             />
 
-            <image className="icon-coat-of-arms"
+            <image
+              className="icon-coat-of-arms"
               style={{ overflow: "visible" }}
               width="801"
               height="961"
@@ -6039,7 +6062,8 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
 		c0.1,0.1,0.2,0.4,0.2,0.6c0.1,0.3,0.1,0.7,0.4,0.9l1,1.2C316.3,331.9,316.5,332.6,316.4,333.2z"
             />
 
-            <image className="icon-coat-of-arms"
+            <image
+              className="icon-coat-of-arms"
               style={{ overflow: "visible" }}
               width="800"
               height="1013"
@@ -6158,7 +6182,8 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
 		"
             />
 
-            <image className="icon-coat-of-arms"
+            <image
+              className="icon-coat-of-arms"
               style={{ overflow: "visible" }}
               width="800"
               height="976"
@@ -6284,7 +6309,8 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
 		c0,0.2,0.1,0.5,0.2,0.8C513.9,426.4,514.2,427.5,514.1,427.7z"
             />
 
-            <image className="icon-coat-of-arms"
+            <image
+              className="icon-coat-of-arms"
               style={{ overflow: "visible" }}
               width="800"
               height="1114"
@@ -6386,7 +6412,8 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
 		c0.1,0.3,0.1,0.6,0,0.8c-1.1,0.6-1.7,1.5-1.8,2.5v0.1c0.2,0.6,0.6,0.8,1.1,1s1,0.4,1.4,1L334,484.1z"
             />
 
-            <image className="icon-coat-of-arms"
+            <image
+              className="icon-coat-of-arms"
               style={{ overflow: "visible" }}
               width="800"
               height="965"
@@ -6484,7 +6511,8 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
 		C252.8,561.1,252.8,561.2,252.9,561.2z"
             />
 
-            <image className="icon-coat-of-arms"
+            <image
+              className="icon-coat-of-arms"
               style={{ overflow: "visible" }}
               width="800"
               height="974"
@@ -6577,7 +6605,8 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
 		c0.3,0.9,0.6,1.9,0.7,2.8c0,0.2,0.1,0.5,0.2,0.9C481.5,506.7,482.1,509.8,482.9,510.8C482.8,510.7,482.9,510.8,482.9,510.8z"
             />
 
-            <image className="icon-coat-of-arms"
+            <image
+              className="icon-coat-of-arms"
               style={{ overflow: "visible" }}
               width="1024"
               height="1124"
@@ -6598,33 +6627,158 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
             </g>
           </g>
         </g>
-		<g id="title-label-list">
-			<text transform="matrix(1 0 0 1 715.6187 326.7607)" className="st17 st18">Kyiv</text>
-			<text transform="matrix(1 0 0 1 574.4885 323.3058)" className="st17 st18">Zhytomir</text>
-			<text transform="matrix(1 0 0 1 533.2682 449.4395)" className="st17 st18">Vinnytsia</text>
-			<text transform="matrix(1 0 0 1 385.8896 389.772)" className="st17 st18">Khmelnytskyi</text>
-			<text transform="matrix(1 0 0 1 362.0491 281.5274)" className="st17 st18">Riwne</text>
-			<text transform="matrix(1 0 0 1 285.3593 266.4273)" className="st17 st18">Lutsk</text>
-			<text transform="matrix(1 0 0 1 198.41 378.1061)" className="st17 st18">Lviv</text>
-			<text transform="matrix(1 0 0 1 302.8076 442.2274)" className="st17 st18">Ternopil</text>
-			<text transform="matrix(1 0 0 1 178.7778 476.7724)" className="st17 st18">Iwano-Frankivsk</text>
-			<text transform="matrix(1 0 0 1 728.9583 779.7061)" className="st17 st18">Odessa</text>
-			<text transform="matrix(1 0 0 1 801.0505 711.9728)" className="st17 st18">Mykolav</text>
-			<text transform="matrix(1 0 0 1 877.9945 760.4275)" className="st17 st18">Kherson</text>
-			<text transform="matrix(1 0 0 1 1052.5956 626.7958)" className="st17 st18">Zaporizhzhia</text>
-			<text transform="matrix(1 0 0 1 817.1347 534.4062)" className="st17 st18">Kropyvnytskyi</text>
-			<text transform="matrix(1 0 0 1 979.8403 985.5728)" className="st17 st18">Simferopol</text>
-			<text transform="matrix(1 0 0 1 1286.9092 611.1727)" className="st17 st18">Donetsk</text>
-			<text transform="matrix(1 0 0 1 1394.4603 526.373)" className="st17 st18">Luhansk</text>
-			<text transform="matrix(1 0 0 1 1071.2698 538.6394)" className="st17 st18">Dnipro</text>
-			<text transform="matrix(1 0 0 1 1034.7147 420.8279)" className="st17 st18">Poltava</text>
-			<text transform="matrix(1 0 0 1 1154.9667 389.6274)" className="st17 st18">Kharkiv</text>
-			<text transform="matrix(1 0 0 1 816.1017 426.2834)" className="st17 st18">Cherkasy</text>
-			<text transform="matrix(1 0 0 1 772.3901 217.1273)" className="st17 st18">Chernihiv</text>
-			<text transform="matrix(1 0 0 1 1051.9924 253.3061)" className="st17 st18">Sumy</text>
-			<text transform="matrix(1 0 0 1 58.6772 514.3273)" className="st17 st18">Uzhhorod</text>
-			<text transform="matrix(1 0 0 1 289.7128 567.9568)" className="st17 st18">Chernivtsi</text>
-		</g>
+        <g id="title-label-list">
+          <text
+            transform="matrix(1 0 0 1 715.6187 326.7607)"
+            className="st17 st18"
+          >
+            Kyiv
+          </text>
+          <text
+            transform="matrix(1 0 0 1 574.4885 323.3058)"
+            className="st17 st18"
+          >
+            Zhytomir
+          </text>
+          <text
+            transform="matrix(1 0 0 1 533.2682 449.4395)"
+            className="st17 st18"
+          >
+            Vinnytsia
+          </text>
+          <text
+            transform="matrix(1 0 0 1 385.8896 389.772)"
+            className="st17 st18"
+          >
+            Khmelnytskyi
+          </text>
+          <text
+            transform="matrix(1 0 0 1 362.0491 281.5274)"
+            className="st17 st18"
+          >
+            Riwne
+          </text>
+          <text
+            transform="matrix(1 0 0 1 285.3593 266.4273)"
+            className="st17 st18"
+          >
+            Lutsk
+          </text>
+          <text
+            transform="matrix(1 0 0 1 198.41 378.1061)"
+            className="st17 st18"
+          >
+            Lviv
+          </text>
+          <text
+            transform="matrix(1 0 0 1 302.8076 442.2274)"
+            className="st17 st18"
+          >
+            Ternopil
+          </text>
+          <text
+            transform="matrix(1 0 0 1 178.7778 476.7724)"
+            className="st17 st18"
+          >
+            Iwano-Frankivsk
+          </text>
+          <text
+            transform="matrix(1 0 0 1 728.9583 779.7061)"
+            className="st17 st18"
+          >
+            Odessa
+          </text>
+          <text
+            transform="matrix(1 0 0 1 801.0505 711.9728)"
+            className="st17 st18"
+          >
+            Mykolav
+          </text>
+          <text
+            transform="matrix(1 0 0 1 877.9945 760.4275)"
+            className="st17 st18"
+          >
+            Kherson
+          </text>
+          <text
+            transform="matrix(1 0 0 1 1052.5956 626.7958)"
+            className="st17 st18"
+          >
+            Zaporizhzhia
+          </text>
+          <text
+            transform="matrix(1 0 0 1 817.1347 534.4062)"
+            className="st17 st18"
+          >
+            Kropyvnytskyi
+          </text>
+          <text
+            transform="matrix(1 0 0 1 979.8403 985.5728)"
+            className="st17 st18"
+          >
+            Simferopol
+          </text>
+          <text
+            transform="matrix(1 0 0 1 1286.9092 611.1727)"
+            className="st17 st18"
+          >
+            Donetsk
+          </text>
+          <text
+            transform="matrix(1 0 0 1 1394.4603 526.373)"
+            className="st17 st18"
+          >
+            Luhansk
+          </text>
+          <text
+            transform="matrix(1 0 0 1 1071.2698 538.6394)"
+            className="st17 st18"
+          >
+            Dnipro
+          </text>
+          <text
+            transform="matrix(1 0 0 1 1034.7147 420.8279)"
+            className="st17 st18"
+          >
+            Poltava
+          </text>
+          <text
+            transform="matrix(1 0 0 1 1154.9667 389.6274)"
+            className="st17 st18"
+          >
+            Kharkiv
+          </text>
+          <text
+            transform="matrix(1 0 0 1 816.1017 426.2834)"
+            className="st17 st18"
+          >
+            Cherkasy
+          </text>
+          <text
+            transform="matrix(1 0 0 1 772.3901 217.1273)"
+            className="st17 st18"
+          >
+            Chernihiv
+          </text>
+          <text
+            transform="matrix(1 0 0 1 1051.9924 253.3061)"
+            className="st17 st18"
+          >
+            Sumy
+          </text>
+          <text
+            transform="matrix(1 0 0 1 58.6772 514.3273)"
+            className="st17 st18"
+          >
+            Uzhhorod
+          </text>
+          <text
+            transform="matrix(1 0 0 1 289.7128 567.9568)"
+            className="st17 st18"
+          >
+            Chernivtsi
+          </text>
+        </g>
       </svg>
     </div>
   );

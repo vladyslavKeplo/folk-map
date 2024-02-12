@@ -1,17 +1,16 @@
 .body-wrapper {
-    display: flex;
-    flex-direction: row;
+    position: relative;
+    height: 100vh;
     width: 100%;
-    height: 100%;
-    padding: 1rem 2rem;
-
+    aspect-ratio: 1545.7/1038.5;
     .map-content-wrapper {
-        max-width: max(650px, 100%);
-        width: 100%;
-        aspect-ratio: 1545.7/1038.5;
-        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 100%;
+        background-color: var(--black, black);
     }
-
+   
     .scale-slider-wrapper {
         width: calc(200px + 4rem);
         padding: 0 2rem;
@@ -30,20 +29,6 @@
             position: absolute;
             bottom: 1rem;
             left: 1rem;
-        }
-    }
-}
-
-@media screen and (min-width: 1440px) {
-    .body-wrapper {
-        height: 100vh;
-        padding: 0 !important;
-
-        .map-content-wrapper {
-            height: 100%;
-            .map-wrapper{
-                border: none !important;
-            }
         }
     }
 }

@@ -1,8 +1,9 @@
-import React, { useLayoutEffect, useState } from "react";
+import { useLayoutEffect, useState } from "react";
 import "./BodyWrapper.scss";
 import UkraineFolkMap from "./map/ukraine-folk-map/UkraineFolkMap";
 import RegionList from "./list-of-regions/RegionList";
 import ScaleMapInput from "./map/scale-input/ScaleMapInput";
+import SidebarMenu from "./side-bar-menu/SideBarMenu";
 
 type Props = {};
 
@@ -29,12 +30,14 @@ const BodyWrapper = (props: Props) => {
 
   return (
     <div className="body-wrapper">
-      {width <= 1440 && (
-        <div className="region-list-wrapper">
-          <RegionList getSelectedRegion={setSelectedRegion} />
-        </div>
-      )}
       <div className="map-content-wrapper">
+        {width <= 1440 && (
+          <SidebarMenu>
+            <div className="region-list-wrapper">
+              <RegionList getSelectedRegion={setSelectedRegion} />
+            </div>
+          </SidebarMenu>
+        )}
         <UkraineFolkMap
           startXOffset={width > 1600 ? width - 1680 : 0}
           scale={scale}

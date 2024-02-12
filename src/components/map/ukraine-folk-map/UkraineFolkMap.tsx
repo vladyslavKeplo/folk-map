@@ -20,19 +20,18 @@ const UkraineFolkMap: React.FC<UkraineFolkMapProps> = ({
   const [prevOffset, setPrevOffset] = useState<{ x: number; y: number }>({x: 0,y: 0,});
   const [mouseOffsetStart, setMouseOffsetStart] = useState<{x: number;y: number;}>({ x: 0, y: 0 });
   const mapWrapper = useRef<HTMLDivElement>(null);
-  let region: HTMLElement | null = null;
+  const [region, setRegion] = useState<DOMTokenList | undefined>(undefined);
 
   useEffect(() => {
-    if (region) {
-      region.classList.remove("--hover-region");
-    }
-    try {
-      region = document.querySelector(`#${selectedRegion}`);
-    } catch (error) {}
-    if (region) {
-      region?.classList.add("--hover-region");
-    }
-  }, [selectedRegion]);
+	if (!selectedRegion) return;
+	
+    setRegion((prevRegion) => {
+		// prevRegion?.remove("--hover-region");
+		return document.querySelector(`#${selectedRegion}`)?.classList
+	});
+    region?.add("--hover-region");
+
+  }, [selectedRegion, region]);
 
   const MouseMoveHandler = (
     event: React.MouseEvent<HTMLDivElement, MouseEvent>
